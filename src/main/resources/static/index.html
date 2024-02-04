@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/logo.png" type="image/png">
+  <link rel="stylesheet" href="/app.css">
+  <script defer src="/app.js"></script>
+  <title>Netsop</title>
+</head>
+
+<body>
+  <header>
+    <img src="/logo.png" alt="Netsop logo" />
+    <h1>Netsop</h1>
+  </header>
+
+  <table class="price-table">
+    <thead>
+      <tr>
+        <th class="price-header">Weight / Quantity</th>
+        <th class="price-header">1 pcs</th>
+        <th class="price-header">2 pcs</th>
+        <th class="price-header">3 pcs</th>
+        <th class="price-header">4 pcs</th>
+        <th class="price-header">5 pcs</th>
+      </tr>
+    </thead>
+    <tbody id="price-overview-body"></tbody>
+  </table>
+
+  <div id="weight-container">
+    <label for="weight">Weight:</label>
+    <input id="weight" type="number" inputmode="numeric" value="1" min="1" max="35" />
+  </div>
+
+  <div>
+    <label for="quantity">Quantity:</label>
+    <input id="quantity" type="number" inputmode="numeric" value="1" min="1" />
+  </div>
+
+  <div>
+    <label for="total-weight">Total weight:</label>
+    <span id="total-weight">1 kg</span>
+  </div>
+
+  <div>
+    <label for="price">Price:</label>
+    <span id="price">-</span>
+  </div>
+</body>
+
+</html>
